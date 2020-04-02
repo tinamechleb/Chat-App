@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html{
+  background-color: #38383d;
+}
+
+
+::-webkit-scrollbar {
+  width: 11px;
+  margin-top: 1em;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff3a; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff73; 
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 28% 60%;
+  max-width: 70%;
+  border-radius: 10px;
+  margin: 8em 0 0 15em;
+}
+
+.partTwo {
+  background-color: rgb(252, 244, 172);
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 3em;
+}
+
+.old-messages {
+  overflow-y:scroll;
+  max-height: 60vh;
+  list-style: none;
+  padding: 15px;
+  padding-left: 40px;
+}
+
+.friends {
+  list-style: none;
+}
+
+.listOfFriends {
+  text-align: center;
+  overflow-y:scroll;
+  max-height: 65vh;
+  min-height: 65vh;
+  background-image: linear-gradient(#02ff96, #18c77e);
+  color: #3a3939;
+  border-radius: 0 0 10px 10px;
+}
+
+span {
+  display: inline-flex;
+  justify-content: space-between;
+  position: sticky;
+  background-image: linear-gradient(#17b473, #02ff96);
+  width: 92.5%;
+  padding: 20px 10px 20px 10px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+.wholeMsg {
+  margin: 10px;
+}
+
+.msgOfSender {
+  margin-left: 20px;
+  background-image: linear-gradient(#e40b82 , tomato);
+  height: max-content;
+  width: max-content;
+  max-width: 20em;
+  border-radius: 8px;
+  padding: 8px;
+  filter: drop-shadow(10px 8px 10px #610c888c);
+}
+
+.dateOfSender {
+  font-size: 10px;
+  margin-top: 2px;
+  color: #9b9b9b;
+  margin-left: 25px;
+  font-weight: lighter;
+}
+
+.sendButt {
+  cursor: pointer;
+  background: url(./images/direct.png) no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  margin-top: 12px;
+  filter: drop-shadow(15px 7px 4px #2390a3);
+}
+
+.sendButt:active {
+  position:relative;
+	top:1px;
+}
+
+.forSending {
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+#myMessage {
+  width: 70%;
+  height: 30px;
+  border-radius: 6px;
+  margin: 10px 10px 0px 50px;
+  filter: drop-shadow(5px 5px 3px #0c6474);
+}
+
+.whoAmI {
+  margin-top: 5px;
+	background: #87ffd8;
+  background: linear-gradient(#87ffd8, #d7b5d6);
+  border-radius: 1000px;
+  box-shadow: 5px 5px 10px #1d1d1d;
+  padding: 20px 36px;
+  color: #ffffff;
+  display: inline-block;
+  font: normal normal 15px/1 "Open Sans", sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+.whoAmI:hover {
+	background:linear-gradient(to bottom, #d7b5d6 5%, #87ffd8 100%);
+	background-color:#00a159;
+}
+.whoAmI:active {
+	position:relative;
+	top:1px;
+}
+
+.info {
+  /* border: 2px solid rgba(128, 128, 128, 0.596) ; */
+  max-width: max-content;
+  padding: 15px;
+  border-radius: 8px;
+  position: absolute;
+  top: 2px;
+  left:6px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.emojis {
+  margin-right: 0.5em;
+  cursor: pointer;
+  background: url(./images/smile\(1\).png) no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  margin-top: 12px;
+}
+
+.emojis:active {
+  position:relative;
+	top:1px;
+}
+
+.showEmojis{
+  display: none;
+  position: absolute;
+  bottom: 3em;
+  right: 2em;
+  background-image: linear-gradient(#17b473, #62cea5);
+  border-radius: 12px;
+  height: 20em;
+  width: 15em;
+}
+
+.showNow {
+  display: unset;
+}
+
+.emoji{
+  cursor: pointer;
+  margin: 3px;
+  font-size: 22px;
+}
+
+.hi {
+  display: grid;
+  grid-template-columns: 26px 26px 26px 26px 26px 26px 26px 26px 26px;
+  max-width: 15em;
+}
